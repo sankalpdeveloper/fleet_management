@@ -22,64 +22,30 @@ type Submenu = {
 export function SidebarMenu() {
     const menus: Menu[] = [
         {
-            label: "Discover",
+            label: "Main",
             name: "Home",
             icon: <Home size={15} className="mr-2" />,
             href: "/home",
         },
         {
-            label: "Discover",
-            name: "Browse",
+            label: "User Management",
+            name: "Users",
             icon: <SquareStack size={15} className="mr-2" />,
-            href: "/home",
+            href: "/users",
         },
-        {
-            label: "Discover",
-            name: "Radio",
-            icon: <RadioIcon size={15} className="mr-2" />,
-            href: "/home/",
-        },
-        {
-            label: "Library",
-            name: "Playlist",
-            icon: <Play size={15} className="mr-2" />,
-            href: "/home/playlist",
-            submenu: [
-                {
-                    name: "Playlist 1",
-                    icon: <ListVideo size={15} className="mr-2" />,
-                    href: "/home/",
-                },
-                {
-                    name: "Playlist 2",
-                    icon: <ListVideo size={15} className="mr-2" />,
-                    href: "/home/",
-                },
-                {
-                    name: "Playlist 3",
-                    icon: <ListVideo size={15} className="mr-2" />,
-                    href: "/home/",
-                },
-            ],
-        },
-        {
-            label: "Library",
-            name: "Songs",
-            icon: <Music size={15} className="mr-2" />,
-            href: "/home/",
-        },
-        {
-            label: "Library",
-            name: "Made for You",
-            icon: <User size={15} className="mr-2" />,
-            href: "/home/",
-        },
-        {
-            label: "Library",
-            name: "Artist",
-            icon: <Mic2 size={15} className="mr-2" />,
-            href: "/home/",
-        },
+        // {
+        //     label: "Library",
+        //     name: "Playlist",
+        //     icon: <Play size={15} className="mr-2" />,
+        //     href: "/home/playlist",
+        //     submenu: [
+        //         {
+        //             name: "Playlist 1",
+        //             icon: <ListVideo size={15} className="mr-2" />,
+        //             href: "/home/",
+        //         }
+        //     ],
+        // }
     ];
 
     const uniqueLabels = Array.from(new Set(menus.map((menu) => menu.label)));

@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/dialog"
 import { useState } from 'react'
 
-const CustomDialog = ({ content, title = "", description = "", isOpen, setIsOpen }) => {
+const CustomDialog = ({ content, title = "", description = "", isOpen, setIsOpen }: any) => {
     const [Open, setOpen] = useState(false)
 
     return (

@@ -12,20 +12,20 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 
 export default function Component() {
-  const [panFile, setPanFile] = useState(null)
-  const [bankChequeFile, setBankChequeFile] = useState(null)
-  const [stampFile, setStampFile] = useState(null)
-  const [aadhaarFile, setAadhaarFile] = useState(null)
-  const handlePanFileChange = (e) => {
+  const [panFile, setPanFile] = useState<File | null>(null)
+  const [bankChequeFile, setBankChequeFile] = useState<File | null>(null)
+  const [stampFile, setStampFile] = useState<File | null>(null)
+  const [aadhaarFile, setAadhaarFile] = useState<File | null>(null)
+  const handlePanFileChange = (e: any) => {
     setPanFile(e.target.files[0])
   }
-  const handleBankChequeFileChange = (e) => {
+  const handleBankChequeFileChange = (e: any) => {
     setBankChequeFile(e.target.files[0])
   }
-  const handleStampFileChange = (e) => {
+  const handleStampFileChange = (e: any) => {
     setStampFile(e.target.files[0])
   }
-  const handleAadhaarFileChange = (e) => {
+  const handleAadhaarFileChange = (e: any) => {
     setAadhaarFile(e.target.files[0])
   }
   const handleDeletePanFile = () => {
